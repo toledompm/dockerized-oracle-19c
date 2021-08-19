@@ -1,7 +1,7 @@
 # Dockerized Oracle 12c - With Sample Databases
 ## Setup
 
-1 - First things first, you need to "buy" Oracle Database Enterprise Edition from [dockerhub](https://hub.docker.com/_/oracle-database-enterprise-edition)
+1 - First things first, you need to "buy" (developer tier is free as of the time of writing) Oracle Database Enterprise Edition from [dockerhub](https://hub.docker.com/_/oracle-database-enterprise-edition)
 
 2 - Login to the docker-hub account you used for step 1 ([docs](https://docs.docker.com/engine/reference/commandline/login/)):
 ``` bash
