@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  oracle:
+    image: store/oracle/database-enterprise:12.2.0.1
+    volumes:
+      - ./oradata:/opt/oracle/oradata
+      - ./db-sample-schemas-12.2.0.1:/home/oracle/db-sample-schemas
+    ports:
+      - 1521:1521
+      - 8080:8080
+      - 5500:5500
