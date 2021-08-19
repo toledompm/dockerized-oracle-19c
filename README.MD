@@ -18,7 +18,16 @@ docker-compose up
 make setup
 ```
 
-5 - Now all thats left, is to connect to the database and install the schemas, you can head over to the official docs for a step by step guide on how to do that: https://docs.oracle.com/database/121/COMSC/installation.htm
+5 - Now all thats left, is to connect to the database and install the schemas, you can head over to the official docs for a step by step guide on how to do that: https://docs.oracle.com/database/121/COMSC/installation.htm. To connect to the database you can just run:
 ```
 make sys
 ```
+
+## FAQ
+### HR Install:
+  - Step 4 - sys default password: `Oradoc_db1`
+  - Step 6 - connection string: `localhost/orclpdb1.localdomain`
+
+## Sources:
+- https://github.com/oracle/db-sample-schemas/
+- https://github.com/oracle/docker-images/
