@@ -2,6 +2,8 @@ version: '3.8'
 services:
   oracle:
     image: store/oracle/database-enterprise:12.2.0.1
+    environment:
+      DB_MEMORY: 2GB # this is the default value, I recomend to changing it
     volumes:
       - ./oradata:/opt/oracle/oradata
       - ./db-sample-schemas-12.2.0.1:/home/oracle/db-sample-schemas
