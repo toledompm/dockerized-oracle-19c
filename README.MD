@@ -1,4 +1,4 @@
-# Dockerized Oracle 12c - With Sample Databases
+# Dockerized Oracle 19c - With Sample Databases
 
 ## Pre requisites
 - **Docker image**: you need to build your own docker image, you can find the resources to do that here: https://github.com/oracle/docker-images
@@ -28,6 +28,7 @@ make run-schemas
 
 ## Install scripts input
 *: sys password is altered to `sys` during the `make setup` command, if you want it to be something else just change it directly in the [makefile](./Makefile#L2)
+
 **: Not exactly the right or recomended answer, just what I wanted to input
 
 If installing manually, after each install I recommend exiting and reconnecting:
@@ -118,7 +119,7 @@ Oneliner:
 
 ## FAQ
 
-*Permission errors* - if you see a lot of file permission errors like `Cannot create directory "/opt/oracle/oradata/ORCLCDB".` while bringing the containers up for the first time, you need to change your oradata permissions:
+*Permission errors* - if you see a lot of file permission errors like `Cannot create directory "/opt/oracle/oradata/ORCLCDB".` while bringing the containers up for the first time, you need to change the permissions for the ./oradata folder:
 ```bash
 $ chown -R o+w ./oradata
 ```
